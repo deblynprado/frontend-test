@@ -1,0 +1,42 @@
+.category {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 15px;
+	@include border-radius( 13px );
+	&[class*=-ux_ui] {
+		background-color: $cat-ux;
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: darken( $cat-ux, 15% );
+		}
+	}
+
+	&[class*=-case_study] {
+		background-color: $cat-study;
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: darken( $cat-study, 15% );
+		}
+	}
+
+	&[class*=-product_design] {
+		background-color: $cat-design;
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: darken( $cat-design, 15% );
+		}
+	}
+
+	&[class*=-discussion] {
+		background-color: $cat-discussion;
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: darken( $cat-discussion, 15% );
+		}
+	}
+}
