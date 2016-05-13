@@ -71,3 +71,14 @@ header {
 	color: #e3472f;
 	border-bottom: 1px solid #e3472f;
 }
+
+.load-more {
+	text-align: center;
+	color: #e3472f;
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	background-color: #f4f4f1;
+	padding: 20px 0;
+	.fa-refresh { color: #e3472f; }
+}
