@@ -4,6 +4,11 @@ ul {
 	padding: 0;
 }
 
+.list-horizonal {
+	list-style: none;
+	li { display: inline; }
+}
+
 .item {
 	display: inline-block;
 	width: 100%;
@@ -56,4 +61,51 @@ ul {
 			color: darken( #d9d9d9, 15% );
 		}
 	}
+}
+
+.links-footer {
+	float: right;
+	li {
+		position: relative;
+		a {
+			text-decoration: none;
+			color: #000;
+			&:active,
+			&:focus,
+			&:hover { text-decoration: underline; }
+		}
+	}
+
+	.social-logo {
+		margin-right: 3px;
+		clear: both;
+		position: relative;
+		top: 4px;
+	}
+}
+
+.footer-menu-item {
+	float: right;
+	position: relative;
+	top: 4px;
+	margin-left: 10px;
+	&:first-child {
+		&:before {
+			content: "\2022";
+			margin-right: 10px;
+		}
+	}
+
+	li {
+		margin: 5px;
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
+		a { color: #e76858; }
+	}
+}
+
+.year-signature {
+	color: darken( #ebebeb, 15% );
+	position: relative;
+	top: -15px;
 }
