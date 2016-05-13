@@ -12,6 +12,7 @@
   <link rel="alternate" type="application/rss+xml" title="FrontEnd Test" href="" />
   
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://use.fontawesome.com/39f48ee303.js"></script>
   
 </head>
 
@@ -19,7 +20,7 @@
 <body>
   <a href="#content" class="link-content">Jump to content</a>
   <header role="banner">
-    <h1><a href="#" id="logo" class="logo"><img src="assets/img/logo-header.png" alt="Logo UX"></a></h1>
+    <h1><a href="#" id="logo" class="logo"><img src="assets/img/logo.png" alt="Logo UX"></a></h1>
     <nav id="menu" role="navigation">
       <span class="line"></span>
       <span class="line"></span>
@@ -32,45 +33,59 @@
     </form>
 
     <div class="right-content">
-      <a href="" class="button button-action">Add Post</a>
+      <a href="" class="button button-action"><span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>Add Post</a>
 
       <img src="assets/img/user-photo.png" alt="User profile photo" id="user-profile-photo" class="user-profile-photo">
     </div>
   </header>
   
   <main role="main" id="content" class="content">
-    <ul class="list">
+    <ul class="data-list">
       <li class="item">
-        <div class="number">11</div>
+        <div class="votes">
+          <svg enable-background="new 0 0 32 32" height="15px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" class="icon-red"/>
+          </svg>
+          <span class="number">11</span>
+        </div>
         <a href="http://medium.com" class="site-url">medium.com</a>
         <h2 class="title">Want people to use your product? Use it yourself.</h2>
-        <a href="#" class="category">Product Design</a>
-        <a href="#" class="user-info">
-          <img src="#" alt="" class="photo" />
-          Nobtaka Nukui
-        </a>
-        <span>43 Minutes ago</span>
-        <div class="comments">4 Comments</div>
-        <a href="#" class="link-edit">Edit</a>
+        <a href="#" class="category category-discussion">Product Design</a>
+        <div class="user-info">
+          <img src="assets/img/photo-small.png" alt="" class="photo" />
+          <a href="#" class="author red-links">Nobtaka Nukui</a>
+          <span class="time">43 Minutes ago</span>
+          <div class="comments"><i class="fa fa-comment" aria-hidden="true"></i> <a href="#" class="red-links">4 Comments</a></div>
+          <a href="#" class="link-edit red-links">Edit</a>
+        </div>
       </li>
     </ul>
 
     <div class="load-more">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
       Load More
     </div>
   </main>
 
   <footer role="footer">
-    <a href="#" id="logo-footer" class="logo-footer">ux</a>
+    <a href="#" id="logo" class="logo footer-logo"><img src="assets/img/logo.png" alt="Logo UX"></a>
+    <div class="disclaimer">
+      <strong>The UX Library</strong> <br>
+      Community curated design content & discussion
+    </div>
 
-    <ul id="links-footer" class="list-horizonal">
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Sign in </a></li>
+    <ul id="links-footer" class="list-horizonal links-footer">
+      <li><a href="#"><img src="assets/img/icons/ico-facebook.jpg" alt="Ícone do Facebook" class="social-logo">Facebook</a></li>
+      <li><a href="#"><img src="assets/img/icons/ico-twitter.jpg" alt="Ícone do Twitter" class="social-logo">Twitter</a></li>
+      <li>
+        <ul class="list-horizontal footer-menu-item">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sign in </a></li>
+        </ul>
+      </li>
     </ul>
-    <p><small>2014 - The UX Library</small></p>
+    <small class="year-signature">&#169; 2014 - The UX Library</small>
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>

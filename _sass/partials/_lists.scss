@@ -1,0 +1,158 @@
+/////////////////////
+//Lists Definition //
+/////////////////////
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.list-horizonal {
+	list-style: none;
+	li { display: inline; }
+}
+
+////////////////
+// Main Lists //
+////////////////
+
+// List where json file will be loaded
+.data-list {
+	.item {
+		display: inline-block;
+		width: 100%;
+		list-style: none;
+		margin-bottom: 50px;
+		&:first-child { margin-top: 35px; }
+		&:last-child { margin-bottom: 0; }
+
+		.icon-red {
+			fill: #e3472f;
+			width: 10px;
+			height: 10px;
+		}
+
+		.votes {
+			text-align: center;
+			font-weight: 400;
+			font-size: 15px;
+			display: inline-block;
+			width: 45px;
+			border: 1px solid #f0f0f0;
+			margin-right: 20px;
+			float: left;
+			@include border-radius( 3px );
+
+			svg { margin-top: 10px; }
+		}
+
+		.number {
+			font-size: 22px;
+			font-weight: 500;
+			display: inline-block;
+			width: 100%;
+			margin-top: 5px;
+			border-top: 1px solid #d9d9d9;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.site-url {
+			font-size: 11px;
+			color: #d9d9d9;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			&:active,
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: darken( #d9d9d9, 15% );
+			}
+		}
+	}
+
+	.user-info {
+		display: inline-block;
+		border-left: 1px solid #c7c7c7;
+		padding-left: 15px;
+		text-decoration: none;
+		margin-right: 10px;
+		.photo {
+			margin-right: 10px;
+			float: left;
+		}
+
+		.author {
+			font-size: 13px;
+			margin-right: 10px;
+		}
+
+		.comments {
+			font-size: 11px;
+			display: inline-block;
+			margin-right: 10px;
+			.fa-comment { color: #e3472f; }
+		}
+	}
+
+	.time {
+		font-size: 11px;
+		color: #ababab;
+		padding-right: 10px;
+		&:after {
+			content: "\2022";
+			font-size: 15px;
+			margin-left: 10px;
+		}
+	}
+
+	.link-edit { font-size: 12px; }
+}
+
+
+//////////////////
+// Footer Lists //
+//////////////////
+footer {
+	.links-footer {
+		float: right;
+		li {
+			position: relative;
+			a {
+				text-decoration: none;
+				color: #000;
+				&:active,
+				&:focus,
+				&:hover { text-decoration: underline; }
+			}
+		}
+
+		.social-logo {
+			margin-right: 3px;
+			clear: both;
+			position: relative;
+			top: 4px;
+		}
+	}
+
+	.footer-menu-item {
+		float: right;
+		position: relative;
+		top: 4px;
+		margin-left: 10px;
+		&:first-child {
+			&:before {
+				content: "\2022";
+				margin-right: 10px;
+			}
+		}
+
+		li {
+			margin: 5px;
+			&:first-child { margin-left: 0; }
+			&:last-child { margin-right: 0; }
+			a { color: #e76858; }
+		}
+	}
+}

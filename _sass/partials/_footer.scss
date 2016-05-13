@@ -1,0 +1,27 @@
+/////////////////////////////
+// Footer components style //
+/////////////////////////////
+
+footer {
+	display: inline-block;
+	width: 100%;
+	margin-top: 15px;
+	.footer-logo {
+		float: left;
+		border: none;
+	}
+
+	.disclaimer {
+		float: left;
+	}
+
+	.year-signature {
+		color: darken( #ebebeb, 15% );
+		position: relative;
+		top: -15px;
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+		float: right;
+	}
+}

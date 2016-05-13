@@ -1,4 +1,7 @@
-// Reset Styles
+//////////////////
+// Reset Styles //
+//////////////////
+
 .button {
 	border: none;
 	height: 20px;
@@ -10,9 +13,19 @@
 	&:hover {
 		text-decoration: none;
 	}
+
+	.icon {
+		padding: 10px 10px 10px 0;
+		margin-right: 15px;
+		border-right: 1px solid transparent;
+	}
 }
 
-// Button Default
+////////////////////
+// Buttons Layout //
+////////////////////
+
+// Default
 .button-default {
 	border: 1px solid $border-color;
 	color: #545454;
@@ -24,7 +37,7 @@
 	}
 }
 
-// Button Action
+// Action
 .button-action {
 	border: 1px solid transparent;
 	color: #fff;
@@ -36,4 +49,6 @@
 		border: 1px solid $primary-color;
 		color: $primary-color;
 	}
+
+	.icon { border-right: 1px solid #d63820; }
 }

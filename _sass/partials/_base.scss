@@ -1,3 +1,7 @@
+////////////////////
+// General styles //
+////////////////////
+
 body {
 	max-width: 820px;
 	width: 100%;
@@ -6,25 +10,11 @@ body {
 	border: 0;
 }
 
-header {
-	display: inline-block;
-	width: 100%;
-	padding: 25px 0;
-	border-bottom: 1px solid $border-color;
-}
-
-.logo {
-	padding-right: 15px;
-	border-right: 1px solid #efefef;
-	clear: both;
-	float: left;
-}
-
-.right-content {
-	float: right;
-	a { float: left; }
-	.user-profile-photo {
-		margin-left: 20px;
-		@include border-radius( 3px );
-	}
+/////////////
+// Helpers //
+/////////////
+.red-links {
+	text-decoration: none;
+	color: #e3472f;
+	border-bottom: 1px solid #e3472f;
 }
