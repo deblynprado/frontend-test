@@ -1,8 +1,11 @@
 .category {
+	font-size: 11px;
+	color: #fff;
 	display: inline-block;
 	text-decoration: none;
-	color: #fff;
-	padding: 7px 15px;
+	border: none;
+	padding: 5px 10px;
+	margin-right: 12px;
 	@include border-radius( 13px );
 	&[class*=-ux_ui] {
 		background-color: $cat-ux;
