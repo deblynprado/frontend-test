@@ -1,4 +1,7 @@
-// Reset Styles
+//////////////////
+// Reset Styles //
+//////////////////
+
 .button {
 	border: none;
 	height: 20px;
@@ -18,7 +21,11 @@
 	}
 }
 
-// Button Default
+////////////////////
+// Buttons Layout //
+////////////////////
+
+// Default
 .button-default {
 	border: 1px solid $border-color;
 	color: #545454;
@@ -30,7 +37,7 @@
 	}
 }
 
-// Button Action
+// Action
 .button-action {
 	border: 1px solid transparent;
 	color: #fff;
