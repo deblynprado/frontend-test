@@ -1,4 +1,7 @@
 $(function() {
+setTimeout(showContent, 2000);
+
+
   searchData();
   $.getJSON( "assets/js/data.json", function( data ) {
     var items = [];
@@ -28,4 +31,9 @@ function searchData() {
         }
       });
   });
+}
+
+function showContent() {
+  $('.loading').hide();
+  $('ul').removeClass('hide');
 }
