@@ -14,5 +14,46 @@ input[type="datalist"] {
 	max-width: 300px;
 	width: 300px;
   padding: 10px 5px;
+  -webkit-appearance: none;
   @include border-radius( 3px );
+}
+
+@media( max-width: 667px ) {
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="email"],
+  input[type="datalist"] { width: 280px; }
+}
+
+@media( max-width: 568px ) {
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="email"],
+  input[type="datalist"] { width: 190px; }
+}
+
+
+@media( max-width: 480px ) {
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="email"],
+  input[type="datalist"] { width: 100px; }
+}
+
+@media( max-width: 414px ) {
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="email"],
+  input[type="datalist"] {
+    height: 40px;
+    max-width: 100%;
+    width: 90%;
+    position: absolute;
+    top: 2px;
+    right: 0;
+  }
 }

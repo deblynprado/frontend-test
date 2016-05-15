@@ -24,3 +24,17 @@ form {
     }
 	}
 }
+
+@media ( max-width: 414px ) {
+ form {
+  margin-top: 5px;
+  &.search {
+    width: 95%;
+    height: 45px;
+    .fa {
+      padding-top: 15px;
+      z-index: 99999;
+    }
+  }
+ }
+}

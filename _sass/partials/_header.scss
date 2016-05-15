@@ -23,3 +23,16 @@ header {
 		}
 	}
 }
+
+@media( max-width: 414px ) {
+  header {
+    .logo { padding-right: 5px; }
+
+    .right-content {
+      position: absolute;
+      top: 63px;
+      right: 10px;
+      .user-profile-photo { margin-left: 5px; }
+    }
+  }
+}

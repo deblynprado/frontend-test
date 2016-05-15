@@ -27,12 +27,12 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	font-weight: 300;	
+	font-weight: 300;
 	line-height: 19.3px;
 }
 
 h3 {
-	
+
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 15.4px;
@@ -59,4 +59,11 @@ pre {
 	font-variant: normal;
 	font-weight: 300;
 	line-height: 18.5667px;
+}
+
+@media ( max-width: 375px ) {
+  h2 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
 }
