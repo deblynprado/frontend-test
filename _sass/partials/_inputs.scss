@@ -13,5 +13,6 @@ input[type="datalist"] {
 	font-size: 14px;
 	max-width: 300px;
 	width: 300px;
-	@include border-radius( 3px );
+  padding: 10px 5px;
+  @include border-radius( 3px );
 }
