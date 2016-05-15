@@ -17,5 +17,24 @@ form {
 		position: relative;
 		top: 2px;
 		margin-left: 15px;
+    background-color: #f0f0f0;
+    .fa {
+      color: #e1e1e1;
+      padding-left: 15px;
+    }
 	}
+}
+
+@media ( max-width: 414px ) {
+ form {
+  margin-top: 5px;
+  &.search {
+    width: 95%;
+    height: 45px;
+    .fa {
+      padding-top: 15px;
+      z-index: 99999;
+    }
+  }
+ }
 }

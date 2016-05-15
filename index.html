@@ -12,28 +12,36 @@
   <link rel="alternate" type="application/rss+xml" title="FrontEnd Test" href="" />
 
   <link rel="stylesheet" href="assets/css/style.css">
-
-
+  <script src="https://use.fontawesome.com/39f48ee303.js"></script>
 </head>
 
 
 <body>
-  <a href="#content" class="link-content">Jump to content</a>
-  <header role="banner">
-    <h1><a href="#" id="logo" class="logo"><img src="assets/img/logo.png" alt="Logo UX"></a></h1>
-    <nav id="menu" role="navigation">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </nav>
+  <div class="container">
+    <a href="#content" class="link-content">Jump to content</a>
+    <header role="banner">
+      <h1><a href="#" id="logo" class="logo"><img src="assets/img/logo.png" alt="Logo UX"></a></h1>
+      <nav id="menu" role="navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </nav>
 
-    <form action="#" id="search" class="search" role="search">
-      <label for="input-search" class="hidden">search</label>
-      <input id="input-search" type="search" name="input-search" value="" />
-    </form>
+      <form action="#" id="search" class="search" role="search">
+        <label for="search-item" class="hidden">search</label>
+        <div class="search">
+         <span class="fa fa-search"></span>
+         <input id="search-item" type="search" name="search-item" />
+       </div>
+     </form>
 
-    <div class="right-content">
-      <a href="" class="button button-action"><span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>Add Post</a>
+     <div class="right-content">
+      <a href="" class="button button-action">
+        <span class="icon">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </span>
+        <span>Add Post</span>
+      </a>
 
       <img src="assets/img/user-photo.png" alt="User profile photo" id="user-profile-photo" class="user-profile-photo">
     </div>
@@ -89,6 +97,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+</div>
 </body>
 
 </html>
