@@ -15,16 +15,16 @@ function searchData() {
     var x = 0;
     $(".data-list .item").css("display", "block");
     $(".data-list .item").each(function() {
-      if (value == "") {
+      if (value === "") {
         $('.load-more').empty().remove();
-      };
+      }
       if($(this).text().toUpperCase().indexOf(value.toUpperCase()) < 0) {
           $(this).css("display", "none");
         } else {
-          if (x == 0) {
+          if (x === 0) {
             $('body').append('<div class="load-more">Nothing found!</div>');
             x++;
-          };
+          }
         }
       });
   });
