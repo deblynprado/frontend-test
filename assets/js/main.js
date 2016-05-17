@@ -79,6 +79,10 @@ function render(item) {
   return;
 }
 
+/**
+ * Function to search by text entered inside input field
+ * @return {null}
+ */
 function searchData() {
   var formID = "#input-search";
 
@@ -100,6 +104,7 @@ function searchData() {
       }
     });
   });
+  return;
 }
 
 /**
