@@ -23,7 +23,7 @@ input[type="datalist"] {
   input[type="password"],
   input[type="search"],
   input[type="email"],
-  input[type="datalist"] { width: 280px; }
+  input[type="datalist"] { width: 270px; }
 }
 
 @media( max-width: 568px ) {
@@ -31,7 +31,7 @@ input[type="datalist"] {
   input[type="password"],
   input[type="search"],
   input[type="email"],
-  input[type="datalist"] { width: 190px; }
+  input[type="datalist"] { width: 170px; }
 }
 
 
@@ -40,7 +40,7 @@ input[type="datalist"] {
   input[type="password"],
   input[type="search"],
   input[type="email"],
-  input[type="datalist"] { width: 100px; }
+  input[type="datalist"] { width: 80px; }
 }
 
 @media( max-width: 414px ) {

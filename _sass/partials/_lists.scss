@@ -157,33 +157,48 @@ footer {
 	}
 }
 
+@media ( max-width: 667px ) {
+	footer {
+		.links-footer { float: left; }
+	}
+}
+
+@media ( max-width: 414px ) {
+	footer {
+		.links-footer {
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
+}
+
 @media ( max-width: 375px ) {
-  .data-list {
-    .item {
-      .site-url { font-size: 10px; }
+	.data-list {
+		.item {
+			.site-url { font-size: 10px; }
 
-      .number { font-size: 18px; }
-    }
+			.number { font-size: 18px; }
+		}
 
-    .user-info {
-      border: none;
-      padding-left: 0;
-      .author {
-        margin-right: 5px;
-        font-size: 11px;
-      }
+		.user-info {
+			border: none;
+			padding-left: 0;
+			.author {
+				margin-right: 5px;
+				font-size: 11px;
+			}
 
-      .comments {
-        font-size: 10px;
-        margin-right: 5px;
-      }
-    }
+			.comments {
+				font-size: 10px;
+				margin-right: 5px;
+			}
+		}
 
-    .time {
-      font-size: 10px;
-      padding-right: 5px;
-    }
-  }
+		.time {
+			font-size: 10px;
+			padding-right: 5px;
+		}
+	}
 
-  .photo { display: none; }
+	.photo { display: none; }
 }
