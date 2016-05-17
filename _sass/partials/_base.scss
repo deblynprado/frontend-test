@@ -1,0 +1,24 @@
+////////////////////
+// General styles //
+////////////////////
+
+body {
+	max-width: 820px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+/////////////
+// Helpers //
+/////////////
+.red-links {
+	text-decoration: none;
+	color: #e3472f;
+	border-bottom: 1px solid #e3472f;
+}
+
+.container { padding: 10px; }
+
+.hide { display: none !important; }

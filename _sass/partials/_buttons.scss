@@ -1,0 +1,58 @@
+//////////////////
+// Reset Styles //
+//////////////////
+
+.button {
+	border: none;
+	height: 20px;
+	padding: 10px 15px;
+	text-decoration: none;
+	@include border-radius( 3px );
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+
+	.icon {
+		padding: 10px 10px 10px 0;
+		margin-right: 15px;
+		border-right: 1px solid transparent;
+	}
+}
+
+////////////////////
+// Buttons Layout //
+////////////////////
+
+// Default
+.button-default {
+	border: 1px solid $border-color;
+	color: #545454;
+	&:active,
+	&:hover,
+	&:focus {
+		background-color: $border-color;
+		color: #000;
+	}
+}
+
+// Action
+.button-action {
+	border: 1px solid transparent;
+	color: #fff;
+	background-color: $primary-color;
+	&:active,
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		border: 1px solid $primary-color;
+		color: $primary-color;
+	}
+
+	.icon { border-right: 1px solid #d63820; }
+}
+
+@media ( max-width: 414px ) {
+  .large-screen { display: none; }
+}

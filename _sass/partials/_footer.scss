@@ -1,0 +1,52 @@
+/////////////////////////////
+// Footer components style //
+/////////////////////////////
+
+footer {
+	display: inline-block;
+	width: 100%;
+	margin-top: 15px;
+	.footer-logo {
+		float: left;
+		border: none;
+		margin-right: 10px;
+	}
+
+	.disclaimer {
+		float: left;
+	}
+
+	.year-signature {
+		color: darken( #ebebeb, 15% );
+		position: relative;
+		top: -15px;
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+		float: right;
+	}
+}
+
+@media ( max-width: 667px ) {
+	footer {
+		.year-signature { top: 0; }
+	}
+}
+
+@media ( max-width: 414px ) {
+	footer {
+		.footer-menu-item {
+			float: left;
+			width: 100%;
+			margin: 10px 0 30px 0;
+			&:first-child {
+				&:before {
+					content: "";
+					margin-right: 0;
+				}
+			}
+		}
+
+		.year-signature { text-align: left; }
+	}
+}

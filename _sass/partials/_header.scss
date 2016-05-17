@@ -1,0 +1,62 @@
+///////////////////////////
+// Header element styles //
+///////////////////////////
+
+.link-content {
+  position: absolute;
+  top: -9000px;
+  left: -9000px;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	padding: 25px 0;
+	border-bottom: 1px solid $border-color;
+	.logo {
+		padding-right: 15px;
+		border-right: 1px solid #efefef;
+		clear: both;
+		float: left;
+	}
+
+	.right-content {
+		float: right;
+		a { float: left; }
+		.user-profile-photo {
+			margin-left: 20px;
+			@include border-radius( 3px );
+		}
+	}
+
+  .notification {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 8px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    padding: 5px;
+    background-color: $primary-color;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 52px;
+    @include border-radius( 3px );
+  }
+}
+
+@media( max-width: 414px ) {
+  header {
+    .logo { padding-right: 5px; }
+
+    .right-content {
+      position: absolute;
+      top: 48px;
+      right: 10px;
+      .user-profile-photo { margin-left: 15px; }
+    }
+  }
+}

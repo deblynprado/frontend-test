@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FrontEnd Test</title>
+  <meta name="description" content="FrontEnd Test">
+  <link rel="canonical" href="deblynprado.github.io/frontend-test/">
+  <link rel="alternate" type="application/rss+xml" title="FrontEnd Test" href="deblynprado.github.io/frontend-test/" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://use.fontawesome.com/39f48ee303.js" async=""></script>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <a href="#content" class="link-content" tabindex="0">Jump to content</a>
+    <header role="banner">
+      <h1><a href="#" id="logo" class="logo"><img src="assets/img/logo.png" alt="Logo UX"></a></h1>
+      <nav id="menu" role="navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </nav>
+
+      <form action="#" id="search" class="search" role="search">
+        <div class="search">
+          <label for="input-search" class="hidden">search</label>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input id="input-search" type="search" name="input-search" value="" />
+        </div>
+      </form>
+
+      <div class="right-content">
+        <a href="" class="button button-action"><span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>Add Post</a>
+
+        <img src="assets/img/user-photo.png" alt="User profile photo" id="user-profile-photo" class="user-profile-photo">
+        <span class="notification">5</span>
+      </div>
+    </header>
+
+    <main role="main" id="content" class="content">
+      <div class="load-more loading">
+        <i class="fa fa-refresh spin" aria-hidden="true"></i>
+        Loading content...
+      </div>
+      <div class="fade filters">
+        <span class="label">Filter by:</span>
+        <span onclick="orderList('pop');" class="orderlist listpop">Popularity <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+        <span onclick="orderList('comments');" class="orderlist listcomments">Comments <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+      </div>
+      <ul id="data-list" class="data-list hide">
+      </ul>
+
+      <div class="hide load-more">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+        Load More
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <a href="#" class="logo footer-logo"><img src="assets/img/logo.png" alt="Logo UX"></a>
+      <div class="disclaimer">
+        <strong>The UX Library</strong> <br>
+        Community curated design content & discussion
+      </div>
+
+      <ul id="links-footer" class="list-horizonal links-footer">
+        <li><a href="#"><img src="assets/img/icons/ico-facebook.jpg" alt="Ícone do Facebook" class="social-logo">Facebook</a></li>
+        <li><a href="#"><img src="assets/img/icons/ico-twitter.jpg" alt="Ícone do Twitter" class="social-logo">Twitter</a></li>
+        <li>
+          <ul class="list-horizontal footer-menu-item">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign in </a></li>
+          </ul>
+        </li>
+      </ul>
+      <small class="year-signature">&#169; 2014 - The UX Library</small>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

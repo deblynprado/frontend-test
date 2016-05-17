@@ -1,0 +1,40 @@
+//////////////////
+// Forms styles //
+//////////////////
+form {
+	.hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		border: 0;
+	}
+
+	&.search {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		margin-left: 15px;
+    background-color: #f0f0f0;
+    .fa {
+      color: #e1e1e1;
+      padding-left: 15px;
+    }
+	}
+}
+
+@media ( max-width: 414px ) {
+ form {
+  margin-top: 5px;
+  &.search {
+    width: 95%;
+    height: 45px;
+    .fa {
+      padding-top: 15px;
+      z-index: 99999;
+    }
+  }
+ }
+}
