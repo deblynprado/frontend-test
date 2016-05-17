@@ -2,6 +2,12 @@
 // Header element styles //
 ///////////////////////////
 
+.link-content {
+  position: absolute;
+  top: -9000px;
+  left: -9000px;
+}
+
 header {
 	display: inline-block;
 	width: 100%;
